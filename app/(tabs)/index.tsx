@@ -14,12 +14,17 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Todoアプリ</Text>
+      <Text style={styles.title}>ルーレット履歴を入力</Text>
       <TextInput
-        style={styles.input}
-        placeholder="新しいTodoを入力"
-        value={todo}
-        onChangeText={setTodo}
+          style={styles.input}
+          placeholder="ルーレット履歴を入力"
+          value={todo}
+          onChangeText={(text) => {
+            // Allow only float values
+            const floatText = text.replace(/[^0-9.]/g, '');
+            setTodo(floatText);
+          }}
+          keyboardType="numeric"
       />
       <Button title="追加" onPress={addTodo} />
       <FlatList

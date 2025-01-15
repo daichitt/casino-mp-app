@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "casino-mp-app",
-    "slug": "casino-mp-app",
+    "slug": "cashino-app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -15,7 +15,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.daichitt.cashinoapp"
     },
     "web": {
       "bundler": "metro",
@@ -36,6 +37,15 @@
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "83aaa1da-b1f2-43ca-8824-222b8f07267c"
+      }
+    },
+    "owner": "daichitt"
   }
 }

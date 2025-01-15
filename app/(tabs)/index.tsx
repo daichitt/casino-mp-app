@@ -93,8 +93,8 @@ const App = () => {
           <Text style={styles.headerCell}>回数</Text>
           <Text style={styles.headerCell}>JP後回数</Text>
           <Text style={styles.headerCell}>増減</Text>
-          <Text style={styles.headerCell}>数値</Text>
-          <Text style={styles.headerCell}>操作</Text>
+          <Text style={styles.headerCell}>JP$</Text>
+          <Text style={styles.headerCell}>修正</Text>
         </View>
         <FlatList
             data={todos}
